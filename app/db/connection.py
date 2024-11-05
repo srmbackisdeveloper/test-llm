@@ -11,7 +11,8 @@ def init_db():
     c.execute('''
     CREATE TABLE IF NOT EXISTS users (
         user_id TEXT PRIMARY KEY,
-        thread_id TEXT
+        thread_id TEXT,
+        messages JSONB DEFAULT '[]'
     )
     ''')
 

@@ -3,7 +3,7 @@ import httpx
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Request, Depends
 from app.db.connection import init_db
 from app.db.queries import save_message, get_messages
-from app.types import WebhookRequest, WebhookResponse, CallbackRequest, CallbackResponse, UserMessagesRequest, UserMessagesResponse
+from app.app_types import WebhookRequest, WebhookResponse, CallbackRequest, CallbackResponse, UserMessagesRequest, UserMessagesResponse
 from llm.assistant import get_assistant_response
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")

@@ -4,20 +4,6 @@
 uvicorn app.base:app --reload
 ```
 
-## Environment Variables
-
-- **`OPENAI_API_KEY`** - Your OpenAI API Key
-- **`ASSISTANT_ID`** - Your Assistant ID
-- **`DSN`** - DSN for PostgreSQL database
-
-`.env` file:
-
-```plaintext
-OPENAI_API_KEY=your_openai_api_key
-ASSISTANT_ID=your_assistant_id
-DSN=postgresql://username:password@hostname:port/database
-```
-
 ## Documentation
 
 `GET /docs`
